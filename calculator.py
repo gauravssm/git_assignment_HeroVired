@@ -12,6 +12,8 @@ class Calculator:
         return a * b
 
     def divide(self, a, b):
+        if b == 0:
+            raise ValueError("DividebyZeroError:Cannot divide by zero.")
         return a / b
 
     def square_root(self, x):
